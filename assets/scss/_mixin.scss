@@ -1,0 +1,37 @@
+@mixin btn {
+    border: 1px solid $white;
+    padding: 1.8vh 3.5vw;
+    transition: .5s ease-in-out;
+    &:hover {
+        color: $black;
+        background-color: $white;
+    }
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin whiteSec {
+    background-color: $white;
+    margin: 0 -8vw 30vh -8vw;
+}
+
+@mixin circleAnmtn {
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+            }
+            to {
+            transform: rotate(360deg);
+        }
+    }
+}

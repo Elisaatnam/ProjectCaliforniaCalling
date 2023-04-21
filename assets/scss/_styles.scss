@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Lora;
+    src: url(../font/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Work;
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p, a, blockquote {
+    color: $white;
+}
+
+.stuck h2, .stuck p, .poppy-bear h2, .poppy-bear p, .poppy-bear blockquote {
+    color: $black;
+}
+
+h1, h2, blockquote {
+    font-family: Lora, serif;
+}
+
+h1 {
+    font-size: 8vw;
+    line-height: 75%;
+}
+
+span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px $white;
+}
+
+h2 {
+    font-size: 7vw;
+}
+
+.a1 h2, .b1 h2 {
+    line-height: 100%;
+}
+
+p {
+    font-size: 1.5vw;
+    font-family: Work, sans-serif;
+    line-height: 175%;
+}
+
+a {
+    font-family: Work, sans-serif;
+    text-decoration: none;
+    font-size: 1.8vw;
+}
+
+blockquote {
+    font-size: 2.25vw;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+
+/* ============IMAGES============ */
+img {
+    max-width: 100%;
+}
+
+.line {
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 10vh;
+}
+
+.bearSec img {
+    width: 6vw;
+    height: auto;
+}
+
+.map {
+    width: 35vw;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    right: -7.5vw;
+}
+
+.stuck img, .golden-bear img, .poppy-bear img {
+    position: absolute;
+}
+
+.stuck img:nth-of-type(1) {
+    width: 30vw;
+    height: auto;
+    top: -5%;
+    right: 10%;
+}
+
+.stuck img:nth-of-type(2), .stuck img:nth-of-type(3), .stuck img:nth-of-type(6) {
+    width: 22.5vw;
+    height: auto;
+}
+
+.stuck img:nth-of-type(2) {
+    top: 10%;
+    left: 5%;
+}
+
+.stuck img:nth-of-type(3) {
+    top: 32.5%;
+    right: 0;
+}
+
+.stuck img:nth-of-type(4), .stuck img:nth-of-type(5) {
+    width: 27.5vw;
+    height: auto;
+}
+
+.stuck img:nth-of-type(4) {
+    top: 45%;
+    left: 15%;
+}
+
+.stuck img:nth-of-type(5) {
+    top: 55%;
+    right: 15%;
+}
+
+.stuck img:nth-of-type(6) {
+    top: 70%;
+    left: 0;
+}
+
+.stuck img:nth-of-type(7) {
+    width: 40vw;
+    height: auto;
+    top: 87.5%;
+    right: 15%;
+}
+
+.gb {
+    width: 50vw;
+    height: auto;
+    top: 45%;
+    z-index: 10;
+}
+
+.gb2 {
+    width: 30vw;
+    height: auto;
+    top: 50%;
+    right: 7.5%;
+    z-index: 20;
+}
+
+
+.circle {
+    width: 30vw;
+    height: auto;
+    top: -5%;
+    right: -7.5%;
+}
+
+.pb {
+    width: 55vw;
+    height: auto;
+    top: 55%;
+    right: 10%;
+}
+
+.pb2 {
+    width: 30vw;
+    height: auto;
+    top: 60%;
+    left: 10%;
+}

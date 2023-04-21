@@ -1,0 +1,284 @@
+@font-face {
+  font-family: Lora;
+  src: url(../font/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Work;
+  src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, p, a, blockquote {
+  color: #FFFFFF;
+}
+
+.stuck h2, .stuck p, .poppy-bear h2, .poppy-bear p, .poppy-bear blockquote {
+  color: #000;
+}
+
+h1, h2, blockquote {
+  font-family: Lora, serif;
+}
+
+h1 {
+  font-size: 8vw;
+  line-height: 75%;
+}
+
+span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #FFFFFF;
+}
+
+h2 {
+  font-size: 7vw;
+}
+
+.a1 h2, .b1 h2 {
+  line-height: 100%;
+}
+
+p {
+  font-size: 1.5vw;
+  font-family: Work, sans-serif;
+  line-height: 175%;
+}
+
+a {
+  font-family: Work, sans-serif;
+  text-decoration: none;
+  font-size: 1.8vw;
+}
+
+blockquote {
+  font-size: 2.25vw;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+/* ============IMAGES============ */
+img {
+  max-width: 100%;
+}
+
+.line {
+  height: 20vh;
+  width: 20vw;
+  margin-bottom: 10vh;
+}
+
+.bearSec img {
+  width: 6vw;
+  height: auto;
+}
+
+.map {
+  width: 35vw;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  right: -7.5vw;
+}
+
+.stuck img, .golden-bear img, .poppy-bear img {
+  position: absolute;
+}
+
+.stuck img:nth-of-type(1) {
+  width: 30vw;
+  height: auto;
+  top: -5%;
+  right: 10%;
+}
+
+.stuck img:nth-of-type(2), .stuck img:nth-of-type(3), .stuck img:nth-of-type(6) {
+  width: 22.5vw;
+  height: auto;
+}
+
+.stuck img:nth-of-type(2) {
+  top: 10%;
+  left: 5%;
+}
+
+.stuck img:nth-of-type(3) {
+  top: 32.5%;
+  right: 0;
+}
+
+.stuck img:nth-of-type(4), .stuck img:nth-of-type(5) {
+  width: 27.5vw;
+  height: auto;
+}
+
+.stuck img:nth-of-type(4) {
+  top: 45%;
+  left: 15%;
+}
+
+.stuck img:nth-of-type(5) {
+  top: 55%;
+  right: 15%;
+}
+
+.stuck img:nth-of-type(6) {
+  top: 70%;
+  left: 0;
+}
+
+.stuck img:nth-of-type(7) {
+  width: 40vw;
+  height: auto;
+  top: 87.5%;
+  right: 15%;
+}
+
+.gb {
+  width: 50vw;
+  height: auto;
+  top: 45%;
+  z-index: 10;
+}
+
+.gb2 {
+  width: 30vw;
+  height: auto;
+  top: 50%;
+  right: 7.5%;
+  z-index: 20;
+}
+
+.circle {
+  width: 30vw;
+  height: auto;
+  top: -5%;
+  right: -7.5%;
+}
+
+.pb {
+  width: 55vw;
+  height: auto;
+  top: 55%;
+  right: 10%;
+}
+
+.pb2 {
+  width: 30vw;
+  height: auto;
+  top: 60%;
+  left: 10%;
+}
+
+header {
+  min-height: 100vh;
+  padding: 0 8vw;
+  background-color: #000;
+}
+header .intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20vh;
+}
+header .intro p {
+  margin-bottom: 2.5vh;
+}
+header .intro h1 {
+  margin-bottom: 2.5vh;
+}
+header .bearSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header .bearSec .btn {
+  border: 1px solid #FFFFFF;
+  padding: 1.8vh 3.5vw;
+  transition: 0.5s ease-in-out;
+}
+header .bearSec .btn:hover {
+  color: #000;
+  background-color: #FFFFFF;
+}
+
+main {
+  padding: 0 8vw;
+  background-color: #000;
+}
+main h2 {
+  margin-bottom: 2vh;
+}
+main .last-year {
+  position: relative;
+  margin-bottom: 20vh;
+}
+main .last-year .first {
+  margin-bottom: 25vh;
+}
+main .stuck {
+  background-color: #FFFFFF;
+  margin: 0 -8vw 30vh -8vw;
+  min-height: 200vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main .stuck article {
+  width: 38vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .golden-bear {
+  min-height: 130vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+main .golden-bear .a1 {
+  width: 15vw;
+}
+main .golden-bear .a2 {
+  width: 42.5vw;
+}
+main .poppy-bear {
+  height: 200vh;
+  padding: 0 8vw;
+  padding-top: 50vh;
+  background-color: #FFFFFF;
+  margin: 0 -8vw 30vh -8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+main .poppy-bear .circle {
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .poppy-bear .b1 {
+  width: 15vw;
+}
+main .poppy-bear .b2 {
+  width: 42.5vw;
+}
+
+/*# sourceMappingURL=style.css.map */

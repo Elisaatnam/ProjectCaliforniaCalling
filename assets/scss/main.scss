@@ -1,0 +1,87 @@
+@import "variables";
+@import "styles";
+@import "mixin";
+
+header {
+    min-height: 100vh;
+    padding: $pad100;
+    background-color: $black;
+    .intro {
+        text-align: center;
+        @include flexCol;
+        margin-bottom: 20vh;
+        p {
+            margin-bottom: $margHeadr;
+        }
+        h1 {
+            margin-bottom: $margHeadr;
+        } 
+        }
+    
+    .bearSec {
+        @include flex;
+        .btn {
+            @include btn;
+        }
+    }
+}
+
+main {
+    padding: $pad100;
+    background-color: $black;
+    h2 {
+        margin-bottom: 2vh;
+    }
+    .last-year {
+        position: relative;
+        margin-bottom: 20vh;
+        .first {
+            margin-bottom: 25vh;
+        }
+    }
+    .stuck {
+        @include whiteSec;
+        min-height: 200vh;
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        article {
+            width: 38vw;
+            height: 150vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .golden-bear {
+        min-height: 130vh;
+        @include flex;
+        position: relative;
+        .a1 {
+            width: 15vw;
+        }
+        .a2 {
+            width: 42.5vw;
+        }
+    }
+    .poppy-bear {
+        height: 200vh;
+        padding: $pad100;
+        padding-top: 50vh;
+        @include whiteSec;
+        @include flex;
+        position: relative;
+        overflow: hidden;
+        .circle {
+            animation: rotate 20s linear infinite;
+            @include circleAnmtn
+        }
+        .b1 {
+            width: 15vw;
+        }
+        .b2 {
+            width: 42.5vw;
+        }
+    }
+}
