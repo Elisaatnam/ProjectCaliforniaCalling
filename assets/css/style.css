@@ -212,6 +212,41 @@ img {
   height: auto;
 }
 
+/* FUNKTIONIERT NICHT :-( */
+/* @media only screen and (max-width: 768px) {
+    main {
+        .last-year {
+            position: static;
+            @include flexCol;
+            align-items: flex-start;
+            .first {
+                margin-bottom: 5vh;
+            }
+            .map {
+                width: 75vw;
+                height: auto;
+                position: static;
+            }
+        }
+        .stuck {
+            height: 100vh;
+            @include noFlex;
+            position: static;
+            article {
+                width: 50vw;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            img {
+                position: static;
+                width: 75vw;
+                height: auto;
+            }
+        }
+    }
+} */
 header {
   min-height: 100vh;
   padding: 0 8vw;

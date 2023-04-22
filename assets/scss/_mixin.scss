@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+@mixin noFlex{
+    display: block;
+}
+
 @mixin whiteSec {
     background-color: $white;
     margin: 0 -8vw 30vh -8vw;
