@@ -4,8 +4,7 @@
 
 header {
     min-height: 100vh;
-    padding: $pad100;
-    background-color: $black;
+    @include layout;
     .intro {
         text-align: center;
         @include flexCol;
@@ -27,8 +26,7 @@ header {
 }
 
 main {
-    padding: $pad100;
-    background-color: $black;
+    @include layout;
     h2 {
         margin-bottom: 2vh;
     }
@@ -83,5 +81,47 @@ main {
         .b2 {
             width: 42.5vw;
         }
+    }
+}
+
+footer {
+    min-height: 140vh;
+    @include layout;
+    position: relative;
+    overflow: hidden;
+    .banner {
+        height: 15vh;
+        width: 500%;
+        position: absolute;
+        top: 0;
+        left:-190%;
+        background-color: $white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transform: rotate(45deg);
+        .banner-content{
+            animation: scroll 10s linear alternate-reverse infinite;
+            @include bannerAnmtn;
+        }
+        /* BIN MIT DEM BANNER NICHT GLUECKLICH :-(... bitte um Hilfe... */
+    }
+}
+
+
+footer {
+    .left {
+        width: 50vw;
+        @include flexCol;
+        align-items: flex-start;
+        padding: 30vh 0 0 0;
+        margin-bottom: 20vh;
+        .btn {
+            @include btn;
+        }
+    }
+    .end {
+        @include flex;
+        align-items: center;
     }
 }

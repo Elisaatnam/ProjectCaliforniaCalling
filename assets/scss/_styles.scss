@@ -22,7 +22,7 @@ h1, h2, p, a, blockquote {
     color: $black;
 }
 
-h1, h2, blockquote {
+h1, h2, blockquote, .banner-content p, .dj {
     font-family: Lora, serif;
 }
 
@@ -48,6 +48,33 @@ p {
     font-size: 1.5vw;
     font-family: Work, sans-serif;
     line-height: 175%;
+}
+
+.left p {
+    margin-bottom: 5vh;
+}
+
+.dj {
+    line-height: 150%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.banner-content p {
+    color: $black;
+    font-size: 7vw;
+    font-weight: 700;
+    padding-right: 1vw;
+    display: inline-block;
+}
+
+.stroke-black {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px $black;
+}
+
+.end p:first-of-type {
+    margin-bottom: 2vh;
 }
 
 a {
@@ -174,4 +201,16 @@ img {
     height: auto;
     top: 60%;
     left: 10%;
+}
+
+.end-left img {
+    width: 2vw;
+    height: auto;
+    margin-right: .5vw;
+    margin-bottom: 2.5vh;
+}
+
+.end-right img {
+    width: 7.5vw;
+    height: auto;
 }

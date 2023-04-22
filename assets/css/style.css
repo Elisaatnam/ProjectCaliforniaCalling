@@ -20,7 +20,7 @@ h1, h2, p, a, blockquote {
   color: #000;
 }
 
-h1, h2, blockquote {
+h1, h2, blockquote, .banner-content p, .dj {
   font-family: Lora, serif;
 }
 
@@ -46,6 +46,33 @@ p {
   font-size: 1.5vw;
   font-family: Work, sans-serif;
   line-height: 175%;
+}
+
+.left p {
+  margin-bottom: 5vh;
+}
+
+.dj {
+  line-height: 150%;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.banner-content p {
+  color: #000;
+  font-size: 7vw;
+  font-weight: 700;
+  padding-right: 1vw;
+  display: inline-block;
+}
+
+.stroke-black {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.end p:first-of-type {
+  margin-bottom: 2vh;
 }
 
 a {
@@ -173,6 +200,18 @@ img {
   left: 10%;
 }
 
+.end-left img {
+  width: 2vw;
+  height: auto;
+  margin-right: 0.5vw;
+  margin-bottom: 2.5vh;
+}
+
+.end-right img {
+  width: 7.5vw;
+  height: auto;
+}
+
 header {
   min-height: 100vh;
   padding: 0 8vw;
@@ -279,6 +318,63 @@ main .poppy-bear .b1 {
 }
 main .poppy-bear .b2 {
   width: 42.5vw;
+}
+
+footer {
+  min-height: 140vh;
+  padding: 0 8vw;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+footer .banner {
+  height: 15vh;
+  width: 500%;
+  position: absolute;
+  top: 0;
+  left: -190%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: rotate(45deg);
+  /* BIN MIT DEM BANNER NICHT GLUECKLICH :-(... bitte um Hilfe... */
+}
+footer .banner .banner-content {
+  animation: scroll 10s linear alternate-reverse infinite;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(10%);
+  }
+}
+
+footer .left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  padding: 30vh 0 0 0;
+  margin-bottom: 20vh;
+}
+footer .left .btn {
+  border: 1px solid #FFFFFF;
+  padding: 1.8vh 3.5vw;
+  transition: 0.5s ease-in-out;
+}
+footer .left .btn:hover {
+  color: #000;
+  background-color: #FFFFFF;
+}
+footer .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
