@@ -373,7 +373,7 @@ footer .banner {
   justify-content: flex-end;
   align-items: center;
   transform: rotate(45deg);
-  /* BIN MIT DEM BANNER NICHT GLUECKLICH :-(... bitte um Hilfe... */
+
 }
 footer .banner .banner-content {
   animation: scroll 10s linear alternate-reverse infinite;
